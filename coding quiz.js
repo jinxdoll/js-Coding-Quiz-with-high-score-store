@@ -12,10 +12,10 @@ var questionBBtn = document.createElement("button")
 var questionCBtn = document.createElement("button")
 var questionDBtn = document.createElement("button")
 
-// questionABtn.classList="answerButtonClass"
-// questionBBtn.classList="answerButtonClass"
-// questionCBtn.classList="answerButtonClass"
-// questionDBtn.classList="answerButtonClass"
+questionABtn.classList="answerButtonClass"
+questionBBtn.classList="answerButtonClass"
+questionCBtn.classList="answerButtonClass"
+questionDBtn.classList="answerButtonClass"
 
 var questionArray = []
 var currentQuestion 
