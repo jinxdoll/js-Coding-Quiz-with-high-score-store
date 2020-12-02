@@ -1,24 +1,24 @@
-// var questions = [
-//     { q: "Javascript is a programming language.", a: "True", b: ""},
-//     { q: "HTML stnads for hot tamale meat loaf.", a: "False"},
-//     { q: "Javascript is also known as 'JS'.",     a: "True"},
-//     { q: "Metadata goes in the <footer> section.", a: "False"},
-// ];
+var questions = [
+    { q: "What is finding and fixing errors in programs?", a:"Debugging", b:"Program", c:"Bug", d:"Code"},
+    { q: "What is the action of doing something over and over again?", a:"Loop", b:"Persistence", c:"program", d:"Code"},
+    { q: "A person who writes code and communicates instructions to a computer in known as?", a:"Banker", b:"Coder", c:"Tester", d:"Programmer"},
+    { q: "The letter 'H' in HTML stands for?", a:"Heavy", b:"Hyper", c:"Holding", d:"Hollow"},
+];
 
-// var startButton = document.getElementById("startButton")
-// // container for button needed.
-// var questionAButton = document.createElement("button")
-// var questionBButton = document.createElement("button")
-// var questionCButton = document.createElement("button")
-// var questionDButton = document.createElement("button")
-// questionAButton.classList="answerButtonClass"
+var startButton = document.getElementById("startButton")
+// container for button needed.
+var questionAButton = document.createElement("button")
+var questionBButton = document.createElement("button")
+var questionCButton = document.createElement("button")
+var questionDButton = document.createElement("button")
+questionAButton.classList="answerButtonClass"
 
-// var questionArray = []
-// var currentQuestion 
+var questionArray = []
+var currentQuestion 
 
-// var i = 0;
+var i = 0;
 
-// var score = 0;
+var score = 0;
 
 // function startQuiz() {
 //     for (var i =0; i <questions.length; i++) {
