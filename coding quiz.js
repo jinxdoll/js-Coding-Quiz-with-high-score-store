@@ -7,11 +7,15 @@ var questions = [
 
 var startButton = document.getElementById("startButton")
 // container for button needed.
-var questionAButton = document.createElement("button")
-var questionBButton = document.createElement("button")
-var questionCButton = document.createElement("button")
-var questionDButton = document.createElement("button")
-questionAButton.classList="answerButtonClass"
+var questionABtn = document.createElement("button")
+var questionBBtn = document.createElement("button")
+var questionCBtn = document.createElement("button")
+var questionDBtn = document.createElement("button")
+
+// questionABtn.classList="answerButtonClass"
+// questionBBtn.classList="answerButtonClass"
+// questionCBtn.classList="answerButtonClass"
+// questionDBtn.classList="answerButtonClass"
 
 var questionArray = []
 var currentQuestion 
