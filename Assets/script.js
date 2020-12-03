@@ -82,7 +82,7 @@ function nextQuestion() {
  }
 
 
-// check answers for curretn question and update user score
+// check answers for current question and update user score
 function checkAnswer(answer) {
     // console.log("answer element: ");
     // console.log("answer";)
@@ -100,6 +100,60 @@ function checkAnswer(answer) {
         // console.log("incorrect, score:" + score")        
     }
 }
+
+// displays "correct" and "wrong" answer messages for 3 seconds below the quiz element container
+
+function displayMessage(m) {
+    var timeStart = 0;
+    var timeStop = 2;
+    var messageHr = document.createElement("hr");
+    var messageEl = document.createElement("div");
+    messageEl.textContent = m;
+    document.querySelector(".jumbotron").appendChild(messageHr);
+    document.querySelector(".jumbotron").appendChild(messageEl);
+    var messageInterval = setInterval(function () {
+        timeStart++;
+        if (timeStart >= timeStop) {
+        messageEl.remove();
+        messageEl.remove();
+        clearInterval(messageInterval)            
+        }
+    }, 1000);
+}
+
+// Hides element
+function hide(element) {
+    element.style.display = "none";
+}
+
+// Displays element
+function show(element) {
+    element.style.diplay ="block";
+}
+
+
+// Resets timer variables after message diplayed
+
+function reset() {
+    score = 0;
+    currentQ = 0;
+    secondsElapsed = 0;
+    timerEl.textContent = 0;
+}
+
+
+// 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
