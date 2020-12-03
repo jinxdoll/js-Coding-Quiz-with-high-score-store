@@ -142,15 +142,32 @@ function reset() {
 }
 
 
-// 
+// renders current question
+function renderQuestion() {
+    questionEl.textContent = questions[currentQ].title;
+    for ( var i = 0; i < answersEl.children.length; i++) {
+        answersEl.children[i].children[0].textContent = (i + 1) + ": " + questions[currentQ].choices[i];
+      }
+    }
 
+// renders high scores to the local storage
+    function renderHighScores() {
+        while (scoresEl.firstChild) {
+            scoresEl.removeChild(scoresEl.firstChild);
+        }
+        show(highScoresEl);
+        highScores = JSON.parse(localStorage.getItem("scores"));
+        for(var i = 0; i < highScores.length; i++) {
+            var scoreItem = document.createElement("div");
+            scoreItem.className += "row mb-3 p-2";
+            console.log(scoreItem)
+            scoreItem.setAttribute("style", "background-color:purple;");
+            scoreItem.textContent = (i + 1) + ". " + highScores[i].username + " - " + highScores[i].userScore;
+            scoresEl.appendChild(scoreItem);
+        }
+    }
 
-
-
-
-
-
-
+// Displays High Scores when clicked
 
 
 
