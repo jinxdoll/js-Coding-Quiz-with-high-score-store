@@ -81,6 +81,16 @@ function nextQuestion() {
      clearInterval(interval);
  }
 
+// Calls to check user answer input and call to the next question when button is clicked
+answersEl.addEventListener("click", function (e) {
+    // console.log(e.target);
+    if(e.target.matches("button")) {
+        checkAnswer(e.target);
+        nextQuestion();
+    }
+});
+
+
 
 // check answers for current question and update user score
 function checkAnswer(answer) {
@@ -176,6 +186,8 @@ viewHScoresBtnEl.addEventListener("click", function() {
     stopTimer();
     reset();
 });
+
+// 
 
      
 
