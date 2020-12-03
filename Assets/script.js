@@ -16,3 +16,9 @@ var startQuizBtnel = document.querySelector("#startquiz");
 var quizEl = document.querySelector("#quiz");
 var questionEl = document.querySelector("#question");
 var answerEl = document.querySelector("#answers")
+
+// Input variables elements
+var inputScoreEl = document.querySelector("#inputScore");
+var initialsEl = document.querySelector("#initials");
+var submitInitialsBtnEl = document.querySelector("#submitInitials");
+var userScoreEl = document.querySelector("#score")
