@@ -168,6 +168,17 @@ function renderQuestion() {
     }
 
 // Displays High Scores when clicked
+viewHScoresBtnEl.addEventListener("click", function() {
+    hide(welcomeEl);
+    hide(quizEl);
+    hide(inputScoreEl);
+    renderHighScores();
+    stopTimer();
+    reset();
+});
+
+     
+
 
 
 

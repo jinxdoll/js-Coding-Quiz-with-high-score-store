@@ -68,90 +68,90 @@ function startTimer() {
 // }
 
 //checks answer based on current question and updates the user score
-function checkAnswer(answer) {
-    // console.log("answer element: ");
-    // console.log(answer);
-    var answerIndex = answer.id - 1;
-    // console.log("answer index: " + answerIndex);
+// function checkAnswer(answer) {
+//     // console.log("answer element: ");
+//     // console.log(answer);
+//     var answerIndex = answer.id - 1;
+//     // console.log("answer index: " + answerIndex);
 
-    if (questions[currentQ].answer == questions[currentQ].choices[answerIndex]) {
-        score += 5;
-        // console.log("correct, score: " + score);
-        displayMessage("Correct!");
-    }
-    else {
-        secondsElapsed += 10;
-        displayMessage("Wrong...");
-        // console.log("incorrect, score:" + score);
-    }
-}
+//     if (questions[currentQ].answer == questions[currentQ].choices[answerIndex]) {
+//         score += 5;
+//         // console.log("correct, score: " + score);
+//         displayMessage("Correct!");
+//     }
+//     else {
+//         secondsElapsed += 10;
+//         displayMessage("Wrong...");
+//         // console.log("incorrect, score:" + score);
+//     }
+// }
 
 //displays a message for 2 seconds
-function displayMessage(m) {
-    var timeStart = 0;
-    var timeStop = 2;
-    var messageHr = document.createElement("hr");
-    var messageEl = document.createElement("div");
-    messageEl.textContent = m;
-    document.querySelector(".jumbotron").appendChild(messageHr);
-    document.querySelector(".jumbotron").appendChild(messageEl);
-    var messageInterval = setInterval(function () {
-        timeStart++;
-        if (timeStart >= timeStop) {
-            messageHr.remove();
-            messageEl.remove();
-            clearInterval(messageInterval)
-        }
-    }, 1000);
+// function displayMessage(m) {
+//     var timeStart = 0;
+//     var timeStop = 2;
+//     var messageHr = document.createElement("hr");
+//     var messageEl = document.createElement("div");
+//     messageEl.textContent = m;
+//     document.querySelector(".jumbotron").appendChild(messageHr);
+//     document.querySelector(".jumbotron").appendChild(messageEl);
+//     var messageInterval = setInterval(function () {
+//         timeStart++;
+//         if (timeStart >= timeStop) {
+//             messageHr.remove();
+//             messageEl.remove();
+//             clearInterval(messageInterval)
+//         }
+//     }, 1000);
 
-}
+// }
 
 //hides element
-function hide(element) {
-    element.style.display = "none";
-}
+// function hide(element) {
+//     element.style.display = "none";
+// }
 
-//displays element
-function show(element) {
-    element.style.display = "block";
+// //displays element
+// function show(element) {
+//     element.style.display = "block";
 
-}
+// }
 
-//reset local variables
-function reset() {
-    score = 0;
-    currentQ = 0;
-    secondsElapsed = 0;
-    timerEl.textContent = 0;
-}
+// //reset local variables
+// function reset() {
+//     score = 0;
+//     currentQ = 0;
+//     secondsElapsed = 0;
+//     timerEl.textContent = 0;
+// }
 
 //=================== Rendering ================================
 
 //Renders current question
-function renderQuestion() {
-    questionEl.textContent = questions[currentQ].title;
-    // console.log(answersEl);
-    for (i = 0; i < answersEl.children.length; i++) {
-        answersEl.children[i].children[0].textContent = (i + 1) + ": " + questions[currentQ].choices[i];
-    }
-}
+// function renderQuestion() {
+//     questionEl.textContent = questions[currentQ].title;
+//     // console.log(answersEl);
+//     for (i = 0; i < answersEl.children.length; i++) {
+//         answersEl.children[i].children[0].textContent = (i + 1) + ": " + questions[currentQ].choices[i];
+//     }
+// }
 
 //Renders high scores stored in local storage
-function renderHighScores() {
-    while (scoresEl.firstChild) {
-        scoresEl.removeChild(scoresEl.firstChild);
-    }
-    show(highScoresEl);
-    highScores = JSON.parse(localStorage.getItem("scores"));
-    for (var i = 0; i < highScores.length; i++) {
-        var scoreItem = document.createElement("div");
-        scoreItem.className += "row mb-3 p-2";
-        console.log(scoreItem)
-        scoreItem.setAttribute("style", "background-color:PaleTurquoise;");
-        scoreItem.textContent = (i + 1) + ". " + highScores[i].username + " - " + highScores[i].userScore;
-        scoresEl.appendChild(scoreItem);
-    }
-}
+// function renderHighScores() {
+//     while (scoresEl.firstChild) {
+//         scoresEl.removeChild(scoresEl.firstChild);
+//     }
+//     show(highScoresEl);
+//     highScores = JSON.parse(localStorage.getItem("scores"));
+//     for (var i = 0; i < highScores.length; i++) {
+//         var scoreItem = document.createElement("div");
+//         scoreItem.className += "row mb-3 p-2";
+//         console.log(scoreItem)
+//         scoreItem.setAttribute("style", "background-color:PaleTurquoise;");
+//         scoreItem.textContent = (i + 1) + ". " + highScores[i].username + " - " + highScores[i].userScore;
+//         scoresEl.appendChild(scoreItem);
+//     }
+// }
 
 
 //=========================EVENTS================================
