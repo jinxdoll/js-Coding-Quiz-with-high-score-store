@@ -145,44 +145,6 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
     
     
     // End of function generateQuiz
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
