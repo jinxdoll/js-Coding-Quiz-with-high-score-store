@@ -52,7 +52,43 @@ var submitButton = document.getElementById('submit');
 
 
 
+function generateQuiz(questions, quizContainer, resultsContainer, submitButton) {
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
 
 
 
