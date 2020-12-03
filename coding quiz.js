@@ -98,7 +98,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
 
 
 
-       
+
          // start of ShowResults function//
     function showResults(questions, quizContainer, resultsContainer){
         var answerContainers = quizContainer.querySelectorAll('.answers');
@@ -130,6 +130,22 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
         }
         
     }            // end of showResults container
+
+
+    showQuestions(questions, quizContainer);
+
+            
+            
+        // when user clicks submit, show results
+    submitButton.onclick = function(){
+
+        showResults(questions, quizContainer, resultsContainer);
+        
+    }
+    
+    
+    // End of function generateQuiz
+
 
 
 
