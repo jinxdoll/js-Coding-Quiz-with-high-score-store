@@ -1,0 +1,256 @@
+nav {
+    background-color: #00242B;
+  }
+  
+  .jumbotron.catalog {
+    background-image: url('../assets/images/drawkit-full-stack-man-colour-400px.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    background-color: #fff;
+    height: 250px;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .intro {
+    border: none;
+    border-radius: 0;
+  }
+  
+  .intro .card-header:first-child {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  
+  .intro .card-header {
+    background-color: #7DE38D;
+    color: #fff;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+  }
+  
+  .intro .card-header img {
+    width: 150px;
+    float: right;
+    margin-right: 0.75rem;
+  }
+  
+  .intro .card-body {
+    border-left: 1px solid rgba(0, 36, 43, .3);
+    border-right: 1px solid rgba(0, 36, 43, .3);
+    padding: 1.5rem 1rem 2.5rem 1rem;
+    /* padding-bottom: 1.5rem; */
+  }
+  
+  .intro .card-body p {
+    font-size: 0.9rem;
+    line-height: 1.25;
+  }
+  
+  .intro .card-footer:last-child {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+  
+  .intro .card-footer {
+    background-color: #00242B;
+    color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    /* border-radius: 0.25rem; */
+    letter-spacing: 1px;;
+  }
+  
+  .intro .card-footer img {
+    float: left;
+    width: 30px;
+  }
+  
+  .intro .card-footer p {
+    display: inline-block;
+    font-weight: 600;
+    margin: 0;
+    padding-left: 5px;
+    padding-top: 2px;;
+    text-transform: uppercase;
+  }
+  
+  .intro .card-footer p:hover {
+    cursor: pointer;
+  }
+  
+  .catalog h1 {
+    color: #00242B;
+  }
+  
+  .languages h4 {
+    color: #00242B;
+    margin-bottom: 1.5rem;
+  }
+  
+  .language {
+    box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.1);
+    background-color: #00242B;
+    color: #7DE38D;
+    margin-top: 0.75rem;
+    z-index: 10;
+  }
+  
+  .language .card-body {
+    padding: 0.5rem;
+  }
+  
+  .lang_icon {
+    float: left;
+    padding: 0.25rem 1.5rem 0.25rem 0.5rem;
+  }
+  
+  .lang_def {
+    margin: 0;
+    padding-top: 0.5rem;
+  }
+  
+  .fa-html5,
+  .fa-css3-alt,
+  .fa-js {
+    font-size: 2rem;
+  }
+  
+  .language .card-body:hover {
+    box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, .25);
+    cursor: pointer;
+  }
+  
+  .outro .container {
+    height: 200px;
+  }
+  
+  .outro .background {
+    display: block;
+    height: 300px;
+    position: relative;
+    top: -150px;
+    left: 50px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: -1;
+  }
+  
+  .scores_nav {
+    border-color: #7DE38D;
+    color: #fff;
+  }
+  
+  .scores,
+  .time {
+    color: #fff;
+    display: none;
+  }
+  
+  .quiz_card {
+    border: none;
+    border-radius: 0;
+  
+    background-color: #00242B;
+  }
+  
+  .quiz_card ul li {
+    background-color: #00242B;
+    border: 1px solid #7DE38D;
+  }
+  
+  .quiz_card ul li:hover {
+    cursor: pointer;
+  }
+  
+  .quiz_card .card-header+.list-group .list-group-item:first-child {
+    border-top: 1px solid #7DE38D;
+  }
+  
+  .quiz_card.card>.list-group:last-child .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .quiz_card .list-group-item:first-child {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+  }
+  
+  .score.card {
+    border-color: #fff;
+    background-color: #00202b;
+  }
+  
+  .score.card .card-header {
+    border-bottom-color: #fff;
+  }
+  
+  .result {
+    color: #7DE38D;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  
+  .score.card ul {
+    width: 100%;
+  }
+  
+  .score.card ul li {
+    border: 0;
+    color: #fff;
+    background-color: #00202b;
+    width: 33%;
+    text-align: right;
+  }
+  
+  .score_table {
+    padding-bottom: 5rem;
+  }
+  
+  .score_table .card .card-header+.list-group .list-group-item:first-child {
+    border-top: 1px solid #7DE38D;
+  }
+  
+  .score_table .card>.list-group:last-child .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      border-bottom: 1px solid #7DE38D;
+  }
+  
+  .score_table .card {
+    border: 0;
+    background-color: #00242B;
+  }
+  
+  .score_table .card h3 {
+    color: #fff;
+  }
+  
+  .score_table .card ul li {
+    background-color: #00242B;
+    border: 1px solid #7DE38D;
+    color: #fff;
+  }
+  
+  .player_score {
+    float: right;
+  }
+  
+  footer {
+    background-color: #00242B;
+    color: #7DE38D;
+    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* top: -10px; */
+  
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 0.75rem;
+    margin: 0;
+    padding: 0.5rem 0;
+  }

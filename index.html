@@ -1,24 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultimate Coding Quiz</title>
-</head>
+  
+    <!-- Bootstrap CSS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
+<!-- Custom CSS -->
+
+<!-- aime fixxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx nedd 2 css files- style and reset-->
+<link rel="stylesheet" href="Assets\main.css">
+
+<title>Quick Coding Quiz</title>
+
+</head>
 
 <body>
 
-    <script src="./script.js"></script>
-  
-    <div id="quiz"></div>
-    <button id="submit">Get Results</button>
-    <div id="results"></div>
-    
+  <!-- Header -->
    
+    <header>
+       <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 h2" id="viewHScores">View Highscores</div>
+            <div class="col-md-2 ml-auto h2">Time: <span id="timer">0</span></div>
+        </div>
+     </div>
+    </header> 
 
-</body>
+    <!-- End header -->
+  
+
+  <mainbody>
+    <!-- Main body section starts -->
+
+    <!-- Main container -->
+    <div class="container mt-3">
+      <div class="jumbotron jumbotron-fluid text-center">
+
+        <!-- Welcome container -->
+            <div class="container" id="welcome">
+                <h1 class="h1 mb-4">Welcome to Your Coding Quiz Challenge</h1>
+                <p class="lead mb-4"> Try to answer as many questions as you can correctly, in the time allowed. Incorrect answers will penalize your score time by 5 seconds.</p>
+                   
+                <button type="button" class="btn btn-primary btn-lg" id="startQuiz">Start Quiz</button>
+
+            </div>
+
+         <!--Quiz container --> 
+            <div class= "container" id="quiz">
+              <h1 class="h1 mb-4" id="question"></h1>
+                <div class="container" id="answers">
+                    <div class="row">
+                        <button type="button" class="btn btn-primary btn-lg btn-block mb-3 text-left" id="1"></button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-primary btn-lg btn-block mb-3 text-left" id="2"></button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-primary btn-lg btn-block mb-3 text-left" id="3"></button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-primary btn-lg btn-block mb-3 text-left" id="4"></button>
+                    </div>
+                </div>
+            </div>
+          <!--input high scores container  -->
+          <div class= "container" id="inputScore">
+            <h1 class="h1 mb-4">Your All done!</h1>
+              <p class="lead mb-4">Your final score is: <span id="score"></span></p>
+              <p class="lead mb-4">Enter Your initials: <input type="text " id="initials"></p>
+             <button type="button" class="btn btn-primary btn-lg" id="submitInitials">Submit</button>
+          </div>
+
+
+        <!--view high scores container  -->
+        <div class= "container" id="highscores">
+          <h1 class="h1 mb-4 font-weight-bold">Check out these high scores</h1>
+         <div class="container h4 mb-4"  id="scores"></div>
+          <button type="button" class="btn btn-primary btn-lg" id="goBack">Go Back</button>
+          <button type="button" class="btn btn-primary btn-lg" id="clearScores">Clear Scores</button>
+        </div>
+
+  
+  
+  <!-- Source scripts -->
+  
+        <!-- JavaScript -->
+
+<!-- AIME FIXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+  <script src="Assets\script.js"></script>
+  <script src="Assets\script.js"></script>
+
+
+
+
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+
+ </body>
 
 </html>
+
 
 
