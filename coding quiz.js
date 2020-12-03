@@ -1,8 +1,10 @@
+
+// questions for quiz
 var questions = [
-    { q: "What is finding and fixing errors in programs?", a:"Debugging", b:"Program", c:"Bug", d:"Code"},
-    { q: "What is the action of doing something over and over again?", a:"Loop", b:"Persistence", c:"program", d:"Code"},
-    { q: "A person who writes code and communicates instructions to a computer in known as?", a:"Banker", b:"Coder", c:"Tester", d:"Programmer"},
-    { q: "The letter 'H' in HTML stands for?", a:"Heavy", b:"Hyper", c:"Holding", d:"Hollow"},
+    { prompt: "What is finding and fixing errors in programs ?", a:"Debugging", b:"Program", c:"Bug", d:"Code", answer:"a"},
+    { prompt: "What is the action of doing something over and over again ?", a:"Loop", b:"Persistence", c:"Program", d:"Code", answer:"a"},
+    { prompt: "A person who writes code and communicates instructions to a computer in known as a ?", a:"Banker", b:"Coder", c:"Tester", d:"Programmer", answer:"d"},
+    { prompt: "The letter 'H' in HTML stands for ?", a:"Heavy", b:"Hyper", c:"Holding", d:"Hollow", answer:"b"},
 ];
 
 var startButton = document.getElementById("startButton")
@@ -20,9 +22,29 @@ questionDBtn.classList="answerButtonClass"
 var questionArray = []
 var currentQuestion 
 
-var i = 0;
+// var i = 0;
 
 var score = 0;
+
+
+
+// function startQuiz() {
+    for(var i =0; i < questions.length; i++) {
+       var response = window.prompt(questions[i].prompt);
+       if(response == questions[i].answer) {
+         score++;
+         alert("You are correct!");
+       } else {
+         alert("That is false.");
+       }             
+     }
+    // }
+    alert("You got " + score + "/" + questions.length)
+
+    
+
+
+
 
 // function startQuiz() {
 //     for (var i =0; i <questions.length; i++) {
