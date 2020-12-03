@@ -22,3 +22,9 @@ var inputScoreEl = document.querySelector("#inputScore");
 var initialsEl = document.querySelector("#initials");
 var submitInitialsBtnEl = document.querySelector("#submitInitials");
 var userScoreEl = document.querySelector("#score")
+
+// High score variables elements
+var highScoresEl = document.querySelector("#highScores");
+var scoresEl = document.querySelector("#scores");
+var goBackBtnEl = document.querySelector("#goBack");
+var clearScoresBtnEl = document.querySelector("#clearScores");
