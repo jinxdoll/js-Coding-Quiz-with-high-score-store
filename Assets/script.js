@@ -8,3 +8,6 @@ var interval;
 var timeGiven = 60;
 var secondsElapsed = 0;
 
+// Welcome variables elements
+var welcomeEl = document.querySelector("#welcome");
+var startQuizBtnel = document.querySelector("#startquiz");
