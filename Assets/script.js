@@ -11,3 +11,8 @@ var secondsElapsed = 0;
 // Welcome variables elements
 var welcomeEl = document.querySelector("#welcome");
 var startQuizBtnel = document.querySelector("#startquiz");
+
+// Quiz vairables elements
+var quizEl = document.querySelector("#quiz");
+var questionEl = document.querySelector("#question");
+var answerEl = document.querySelector("#answers")
