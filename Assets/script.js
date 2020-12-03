@@ -15,7 +15,7 @@ var startQuizBtnel = document.querySelector("#startquiz");
 // Quiz vairables elements
 var quizEl = document.querySelector("#quiz");
 var questionEl = document.querySelector("#question");
-var answerEl = document.querySelector("#answers")
+var answersEl = document.querySelector("#answers")
 
 // Input variables elements
 var inputScoreEl = document.querySelector("#inputScore");
@@ -82,8 +82,24 @@ function nextQuestion() {
  }
 
 
+// check answers for curretn question and update user score
+function checkAnswer(answer) {
+    // console.log("answer element: ");
+    // console.log("answer";)
+    var answerIndex = answer.id -1;
+    // console.log("answer index:" + answerIndex);
 
-
+    if (questions[currentQ].answer == questions[currentQ].choices.[answerIndex]) {
+        score =+ 5;
+        // console.log("correct, score:" + score);
+        displayMessage("Correct!");
+        
+    } else {
+        secondsElapsed += 10;
+        displayMessage("WRONG!");
+        // console.log("incorrect, score:" + score")        
+    }
+}
 
 
 

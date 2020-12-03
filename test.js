@@ -51,21 +51,21 @@ function startTimer() {
 
 //Clears current question and calls for display of next question
 //Calls for input score display if last question
-function nextQuestion() {
-    currentQ++;
-    if (currentQ < questions.length) {
-        renderQuestion();
-    } else {
-        // console.log("final score: " + score);
-        stopTimer();
-        if ((timeGiven - secondsElapsed) > 0)
-            score += (timeGiven - secondsElapsed);
-        userScoreEl.textContent = score;
-        hide(quizEl);
-        show(inputScoreEl);
-        timerEl.textContent = 0;
-    }
-}
+// function nextQuestion() {
+//     currentQ++;
+//     if (currentQ < questions.length) {
+//         renderQuestion();
+//     } else {
+//         // console.log("final score: " + score);
+//         stopTimer();
+//         if ((timeGiven - secondsElapsed) > 0)
+//             score += (timeGiven - secondsElapsed);
+//         userScoreEl.textContent = score;
+//         hide(quizEl);
+//         show(inputScoreEl);
+//         timerEl.textContent = 0;
+//     }
+// }
 
 //checks answer based on current question and updates the user score
 function checkAnswer(answer) {
