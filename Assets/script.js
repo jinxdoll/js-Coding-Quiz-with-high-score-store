@@ -187,8 +187,15 @@ viewHScoresBtnEl.addEventListener("click", function() {
     reset();
 });
 
-// 
+//Goes back to welcome page from High Scores
+goBackBtnEl.addEventListener("click", function () {
+    hide(highScoresEl);
+    show(welcomeEl);
+});
 
+
+
+// 
      
 
 
