@@ -98,6 +98,42 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
 
 
 
+       
+         // start of ShowResults function//
+    function showResults(questions, quizContainer, resultsContainer){
+        var answerContainers = quizContainer.querySelectorAll('.answers');
+
+        var userAnswer = '';
+        var numCorrect = 0;
+
+        for(var i=0; i<questions.length; i++){
+            
+            userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
+
+            // if answer is correct
+            if(userAnswer===questions[i].correctAnswer){
+
+                numCorrect++;
+
+                answerContainers[i].style.color = 'lightgreen';
+                alert("That is correct!");
+                
+            }
+             else{
+                answerContainers[i].style.color = 'red';
+                alert("wrong Answer");
+            }
+
+
+            resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
+            
+        }
+        
+    }            // end of showResults container
+
+
+
+
 
 
 
