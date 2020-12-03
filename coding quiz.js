@@ -54,40 +54,83 @@ var submitButton = document.getElementById('submit');
 
 function generateQuiz(questions, quizContainer, resultsContainer, submitButton) {
 
+       
+       function showQuestions(questions, quizContainer) {
+            
+                  
+        var output = [];
+        var answers;
 
+             // for each question
+        for(var i=0; i<questions.length; i++){
+        
+                // resets the list of answers
+         answers = [];
 
+                 // for each available answer to this question
+         for(letter in questions[i].answers){
 
+             // add am html radio button
+            answers.push(
 
+                '<label>'
 
+                    + '<input type="radio" name="question'+i+'" value="'+letter+'">'
+                    + letter + ': '
+                    + questions[i].answers[letter]
+                + '</label>'
+            );
+         }
 
+                // add this question and its answer to the output
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        output.push(
+            '<div class="question">' + questions[i].question + '</div>'
+            + '<div class="answers">' + answers.join('') + '</div>'
+            );
+        }
     
+             // combines output list into one string of html and puts it on the page//
+
+        quizContainer.innerHTML = output.join('');
+    }
+       // end of showQuestions function  // 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
