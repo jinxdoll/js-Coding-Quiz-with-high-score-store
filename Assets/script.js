@@ -10,7 +10,7 @@ var secondsElapsed = 0;
 
 // Welcome variables elements
 var welcomeEl = document.querySelector("#welcome");
-var startQuizBtnel = document.querySelector("#startquiz");
+var startQuizBtnEl = document.querySelector("#startquiz");
 
 // Quiz vairables elements
 var quizEl = document.querySelector("#quiz");
@@ -30,16 +30,16 @@ var goBackBtnEl = document.querySelector("#goBack");
 var clearScoresBtnEl = document.querySelector("#clearScores");
 
 
-
-
+// function to allow JS code to load before DOM. Function incapulates the entire JS code.
+window.onlaod= function() {
 
 // Starts Quiz from welcome page ----------------
-startQuizBtnEl.addEventListener("click", function (){
+startQuizBtnEl.addEventListener("click", function () {
     hide(welcomeEl);
     startTimer();
     renderQuestion();
     show(quizEl);
-})
+});
 
 
 // Start timer function-----------------------
@@ -99,7 +99,7 @@ function checkAnswer(answer) {
     var answerIndex = answer.id -1;
     // console.log("answer index:" + answerIndex);
 
-    if (questions[currentQ].answer == questions[currentQ].choices.[answerIndex]) {
+    if (questions[currentQ].answer == questions[currentQ].choices[answerIndex]) {
         score =+ 5;
         // console.log("correct, score:" + score);
         displayMessage("Correct!");
@@ -211,6 +211,8 @@ if (initValue) {
     reset();
  }
 });
+
+}
      
 
 
