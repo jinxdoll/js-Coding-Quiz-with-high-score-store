@@ -195,7 +195,22 @@ goBackBtnEl.addEventListener("click", function () {
 
 
 
-// 
+// creates user object to store in local storage. Then calls to store user initials and high score in local storage then reset variables.
+submitInitialsBtnEl.addEventListener("click", function () {
+var initValue = initialsEl.value.trim();
+if (initValue) {
+    var userScore = { username: initValue, userScore: score };
+    initValue.value = '';
+    if (localStorage.getItem("scores")) {
+        highScores = JSON.parse(localStorage.getItem("scores"));
+    }
+    highScores.push(userScore)
+    localStorage.setItem("scores", json.stringify(highScores));
+    hide(inputScoreEl);
+    renderHighScores();
+    reset();
+ }
+});
      
 
 
