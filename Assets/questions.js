@@ -18,6 +18,6 @@ var questions = [
    { 
         title: "The letter 'H' in HTML stands for ?", 
         choices:  ["Heavy", "Hyper", "Holding", "Hollow"],
-        answer:"Hyperr"   
+        answer:"Hyper"   
    }
 ];
